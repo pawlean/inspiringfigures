@@ -1,160 +1,106 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url("https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap");
 
 .App-header {
-  background-color: #A47DA4;
+  background-color: #a47da4;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 body {
-  background: #A47DA4;
-  color: white;
+  background: #a47da4;
+  color: #ffffff;
   font-weight: bold;
-  font-size: 3em;
   text-align: center;
- }
- .figure {
-   width: 250px;
- }
- .info {
-   background: rgb(121, 92, 121);
-   font-size: 0.7em;
-   text-align: justify;
-   padding: 10px;
- }
- h2 {
-   font-size: 1.2em;
-   padding: 0px;
-   margin: 0px;
- }
- .sub-title {
-   font-size: 0.4em;
-   font-weight: 200;
-   margin-top: 0px;
- }
- .container, .container-2 {
-   display: flex;
-   justify-content: center;
- }
- 
- .item-1, .item-3, .item-4, .item-5, .item-6, .item-7, .item-8, .item-10, .item-11{
-   align-self: center;
-   height: 250px;
- }
- .item-2 {
-   align-self: center;
-   flex: 2;
- }
- 
- .item-12, .item-13 {
-   display: none;
- }
- .Logo {
-   width: 70px;
-   height: 70px;
- }
- .Logo:hover {
-   filter: grayscale(100%);
- }
- .Profile  {
-   filter: grayscale(100%);
-   object-fit: cover;
-   width: 250px;
-   height: 250px;
- }
- .Profile:hover {
-   filter: grayscale(0%);
- }
- .footer  {
-   font-size: 0.3em;
-   margin-top: 10px;
-   margin-bottom: 10px;
- }
- .footer a {
-   color: #FFFFFF;
-   text-decoration: none;
- }
- .footer a:hover {
-   color: #D5CFE1;
-   border-bottom: 1px dotted #D5CFE1;
- }
-
- body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Lato", sans-serif;
+  font-size: 12pt;
+}
+.logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.figure {
+  width: 250px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.info {
+  background: rgb(121, 92, 121);
+  padding: 10px;
+  margin-top: -10px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+}
+.figure-button {
+  background-color: #a47da4;
+  padding: 5px;
+  border-radius: 5px;
+}
+.figure-button:hover {
+  background-color: rgb(140, 103, 140);
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+h2 {
+  font-size: 18pt;
+  text-align: center;
+  padding-top: 10px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+p {
+  font-weight: normal;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.Profile {
+  filter: grayscale(100%);
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+}
+.Profile:hover {
+  filter: grayscale(0%);
+}
+.footer {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 2px solid #d5cfe1;
+  font-weight: bold;
+}
+.footer a:hover {
+  border-bottom: 0px;
+}
+.copyright {
+  color: rgba(255, 255, 255, 0.845);
+  text-align: center;
+  font-size: 10pt;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
 /* Responsiveness */
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  .container, .container-2 {
+  .container {
     flex-wrap: wrap;
-  }
-  .sub-title {
-    font-size: 0.4em;
-  }
-  .item-2 {
-    flex: 1;
-    padding-bottom: 30px;
-    padding-top: 30px;
-
-  }
-  .Profile  {
-    width: 150px;
-    height: 150px;
-  }
-
-  .item-1, .item-3, .item-4, .item-5, .item-6, .item-7, .item-8, .item-10, .item-11 {
-    height: 150px;
-  }
-  .item-10, .item-11 {
-    display: none;
-  }
-  .item-12, .item-13 {
-    display: block;
-    height: 150px;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .container, .container-2 {
+  .container {
     flex-wrap: wrap;
   }
-
 }

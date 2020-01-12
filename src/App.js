@@ -27,6 +27,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <img src="./IF.png" className="logo" alt="IF" />
+        <p>
+          The people that you should <em>really</em> know about
+        </p>
+
         <div className="container">
           {inspiringfigures.map(figure => (
             <Figure
@@ -38,7 +43,32 @@ function App() {
           ))}
         </div>
 
-        <p>Inspiring Figures</p>
+        <div className="footer">
+          <a
+            href="https://by.pawlean.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            by Pawlean
+          </a>{" "}
+          |{" "}
+          <a
+            href="https://www.youtube.com/playlist?list=PLkR4A7sk9JzZBiZ-BmRpMRF96fWqA1q9I"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Watch online
+          </a>{" "}
+          |{" "}
+          <a
+            href="https://clarknarvas.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Production by Clark
+          </a>
+          <p className="copyright">© Pauline P. Narvas, 2018 - 2020</p>
+        </div>
       </header>
     </div>
   );
