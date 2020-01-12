@@ -10,10 +10,12 @@ Check the posts here: https://pawlean.com/category/online/inspiring-figures/
 
 💜 A huge thank you to everyone that has taken part in this little project! You all inspire me every single day 😄
 
-📹 Video production by my little brother, Clark Narvas, every single month. The full YouTube playlist of all my live interviews with all inspiring figures can be found here!
+📹 Video production by my little brother, Clark Narvas (https://clarknarvas.com/), every single month. The full YouTube playlist of all my live interviews with all inspiring figures can be found here: https://www.youtube.com/playlist?list=PLkR4A7sk9JzZBiZ-BmRpMRF96fWqA1q9I
+
+Thank you to Matt Burman (https://mattburman.com/) for helping me when I hit blockers.
 
 ## The Tech
 
 Built on React, thanks Create-React-App.
 
-During the development of this project, I learnt more about React, Flexbox and Javascript.
+During the development of this project, I learnt more about React, Flexbox, Javascript and working with APIs.
