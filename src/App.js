@@ -79,7 +79,7 @@ function App() {
             </a>{" "}
             |{" "}
             <a
-              href="https://instagram.com/inspiringfigs"
+              href="https://instagram.com/inspiringfigures"
               target="_blank"
               rel="noopener noreferrer"
             >
