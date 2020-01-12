@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import './App.css';
+import Figure from './Figure';
 
 function App() {
-  const [show, setShow] = useState(false);
   const [inspiringfigures, setInspiringfigures] = useState([]);
   console.log(inspiringfigures);
 
   
   if (inspiringfigures.length === 0) {
 
-    fetch('https://pawlean.com/wp-json/wp/v2/posts?categories=50')
+    fetch('https://pawlean.com/wp-json/wp/v2/posts?categories=50&per_page=100')
     .then((response) => {
       return response.json();
     })
@@ -34,16 +34,11 @@ function App() {
       <header className="App-header">
         <div className="container">
         
-          <div className="figure">
-          <img src="https://raw.githubusercontent.com/pawlean/inspiring-figures/master/app/public/img/Ishan.jpg" alt="Ishan Beri" className="Profile" onClick={() => setShow(!show)}/>
-
-          {
-            show && <div className="info">
-                  
-            </div>
-          }
-      
-          </div>
+        {
+          inspiringfigures.map(figure => (
+            <Figure excerpt={figure.excerpt} link={figure.link} title={figure.title} image={figure.image} />
+          ))
+        }
 
         </div>
 
