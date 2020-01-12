@@ -7,25 +7,26 @@ function App() {
   console.log(inspiringfigures);
 
   
-    if (inspiringfigures.length === 0) {
+  if (inspiringfigures.length === 0) {
 
-      fetch('https://pawlean.com/wp-json/wp/v2/posts?categories=50')
-      .then((response) => {
-        return response.json();
-      })
-      .then((posts) => {
-  
-        const extract = post => ({
-          excerpt: post.excerpt.rendered,
-          link: post.link,
-          image: post.jetpack_featured_media_url,
-        });
-        const extracted = posts.map(extract);
-        
-        return setInspiringfigures(extracted);
-      })
-    }
-    
+    fetch('https://pawlean.com/wp-json/wp/v2/posts?categories=50')
+    .then((response) => {
+      return response.json();
+    })
+    .then((posts) => {
+
+      const extract = post => ({
+        title: post.title.rendered,
+        excerpt: post.excerpt.rendered,
+        link: post.link,
+        image: post.jetpack_featured_media_url,
+      });
+      const extracted = posts.map(extract);
+      
+      return setInspiringfigures(extracted);
+      
+    })
+  }
 
 
   return (
@@ -38,15 +39,14 @@ function App() {
 
           {
             show && <div className="info">
-              (inspiringfigures) 
+                  
             </div>
           }
-          
-         
-            
+      
           </div>
 
         </div>
+
         <p>
           Inspiring Figures
         </p>
