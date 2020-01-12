@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
 import Figure from "./Figure";
+import Why from "./Why";
+
 
 function App() {
   const [inspiringfigures, setInspiringfigures] = useState([]);
@@ -27,10 +29,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src="./IF.png" className="logo" alt="IF" />
-        <p>
-          The people that you should <em>really</em> know about
-        </p>
+        <img src="./IF.png" className="logo" alt="IF"/>
+        <Why/>
+      
 
         <div className="container">
           {inspiringfigures.map(figure => (
@@ -44,31 +45,10 @@ function App() {
         </div>
 
         <div className="footer">
-          <a
-            href="https://by.pawlean.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            by Pawlean
-          </a>{" "}
-          |{" "}
-          <a
-            href="https://www.youtube.com/playlist?list=PLkR4A7sk9JzZBiZ-BmRpMRF96fWqA1q9I"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Watch online
-          </a>{" "}
-          |{" "}
-          <a
-            href="https://clarknarvas.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Production by Clark
-          </a>
-          <p className="copyright">© Pauline P. Narvas, 2018 - 2020</p>
-        </div>
+          <a href="https://by.pawlean.com" target="_blank" rel="noopener noreferrer">by Pawlean</a> | <a href="https://www.youtube.com/playlist?list=PLkR4A7sk9JzZBiZ-BmRpMRF96fWqA1q9I" target="_blank" rel="noopener noreferrer">Watch online</a> | <a href="https://clarknarvas.com/" target="_blank" rel="noopener noreferrer">Production by Clark</a>
+        <p className="copyright">© Pauline P. Narvas, 2018 - 2020</p>
+
+          </div>
       </header>
     </div>
   );
