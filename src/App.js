@@ -66,7 +66,26 @@ function App() {
           >
             Production by Clark
           </a>
-          <p className="copyright">© Pauline P. Narvas, 2018 - 2020</p>
+          <p className="copyright">
+            © Pauline P. Narvas, 2018 - 2020
+            <br></br>
+            <br></br>
+            <a
+              href="https://twitter.com/inspirefigures"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Twitter <i class="fas fa-hashtag"></i>
+            </a>{" "}
+            |{" "}
+            <a
+              href="https://instagram.com/inspiringfigs"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram <i class="fab fa-instagram"></i>
+            </a>
+          </p>
         </div>
       </header>
     </div>
