@@ -14,7 +14,7 @@ Check the posts here: https://pawlean.com/category/online/inspiring-figures/
 
 Thank you to Matt Burman (https://mattburman.com/) for helping me when I hit blockers.
 
-Deployed on Vercel.
+Deployed on Vercel!
 
 ## The Tech
 
