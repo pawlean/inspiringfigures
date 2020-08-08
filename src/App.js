@@ -64,7 +64,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Production by Clark
+            CN Productions
           </a>
           <p className="copyright">
             © Pauline P. Narvas, 2018 - 2020
@@ -75,7 +75,7 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Twitter <i class="fas fa-hashtag"></i>
+              Twitter <i class="fab fa-twitter-square"></i>
             </a>{" "}
             |{" "}
             <a
