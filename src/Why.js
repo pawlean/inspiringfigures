@@ -4,7 +4,8 @@ import "./App.css";
 function Why() {
   return (
     <p className="intro">
-      The people that you should <em>really</em> know about.
+      Inspiring conversations with the people that you should <em>really</em>{" "}
+      know about.
       <div className="Why">
         Have you ever met someone, get talking and leave feeling refreshed,
         pumped and motivated? <br />
