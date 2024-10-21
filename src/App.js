@@ -8,7 +8,7 @@ function App() {
   console.log(inspiringfigures);
 
   if (inspiringfigures.length === 0) {
-    fetch("https://pawlean.com/wp-json/wp/v2/posts?categories=50&per_page=100")
+    fetch("https://wp.pawlean.com/wp-json/wp/v2/posts?categories=50&per_page=100")
       .then(response => {
         return response.json();
       })
@@ -44,11 +44,11 @@ function App() {
 
         <div className="footer">
           <a
-            href="https://by.pawlean.com"
+            href="https://pawlean.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            by Pawlean
+            Pawlean
           </a>{" "}
           |{" "}
           <a
